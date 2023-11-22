@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <p>Ejercicio de Formularios</p>
+    <form action="grabar.php" method="get">´
+        <fieldset>
+            <legend>Datos del Usuario</legend>
+        <label for="Nombre">Nombre </label>
+            <input type="text" id="Nombre" name="Nombre"><br>
+
+        <label for="Apellidos">Apellidos:</label> 
+            <input type="text" id="Apellidos" name="Apellidos"><br>
+
+        <label for="Email">Email:</label>
+            <input type="email" id="Email" name="Email"><br>
+
+        <label for="Edad">Edad:</label> 
+            <input type="number" id="Edad" name="Edad"><br>
+
+        <label for="pass">Contraseña:</label> 
+            <input type="password" id="pass" name="pass"><br>
+        </fieldset>
+        <label>Adicionales:</label><br>
+        <label for="Fumador">Fumador</label>
+            <input type="checkbox" id="Fumador" name="Fumador">
+        <label for="Wifi">Wifi</label>
+            <input type="checkbox" id="Wifi" name="Wifi"><br>
+        <label>Tipo de Menu</label><br>
+            <label for="Omnivoro">Omnivoro</label>
+                <input type="radio" id="Omnivoro" name="Tipo" value="Omnivoro">
+            <label for="Vegetariano">Vegetariano</label>
+                <input type="radio" id="Vegetariano" name="Tipo" value="Vegetariano">
+            <label for="Vegano">Vegano</label>
+                <input type="radio" id="Vegano" name="Tipo" value="Vegano"><br>
+
+        <label>Elige la marca</label>
+            <select name="numpersonas">
+                <option value="1">Uno</option>
+                <option value="2">Dos</option>
+                <option value="3">Tres</option>
+                <option value="4">Cuatro</option>
+
+            </select>
+        <input type="submit"/>
+    </form> 
+    
+</body>
+</html>

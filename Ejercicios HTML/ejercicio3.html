@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>  
+    <h2>Ejercicio 3 - Formulario de reserva </h2>
+        <form action="envio.php" method="get">
+            <fieldset>
+                <legend>Datos del Cliente</legend>
+                    <label for="Nombre">Nombre</label>
+                        <input type="text" id="Nombre" name="Nombre"/><br>
+                    <label for="Correo">Correo</label>
+                        <input type="email" id="Correo" name="Correo"/><br>
+                    <label for="Reserva">Fecha de la reserva</label>
+                        <input type="date" id="Reserva" name="Reserva"/>
+                    
+            </fieldset>
+            <fieldset>
+                <legend>Preferencias</legend>
+                    <label for="Talla">Talla</label>
+                        <select name="Talla">
+                            <option value="S">Pequeña</option>
+                            <option value="M">Mediana</option>
+                            <option value="L">Grande</option>
+                            <option value="XL">Extra Grande</option>
+                        </select><br>
+                    <label>Accesorio:</label><br>
+                        <label for="Corbata">Corbata</label>
+                            <input type="radio" id="Corbata" name="Accesorio" value="Corbata"/>
+                        <label for="Pajarita" >Pajarita</label>
+                            <input type="radio" id="Pajarita" name="Accesorio" value="Pajarita"/><br>
+                        <label>Otras Accesorios</label><br>
+                            <label for="radio">Chaleco</label>
+                                <input type="checkbox" id="Chaleco" name="Otros" value="Chaleco"/>
+                            <label for="Pañuelo">Pañuelo</label>
+                                <input type="checkbox" id="Chaleco" name="Otros" value="Pañuelo"/>
+                            <label for="Gemelos">Gemelos</label>
+                                <input type="checkbox" id="Gemelos" name="Otros" value="Gemelos" />
+            </fieldset>
+            <fieldset>
+                <legend>Dias de Alquiler</legend>
+                    <label for="Inicio">Dia de incio del Alquierl</label>
+                        <input type="date" id="Inicio" name="Inicio" value="Inicio"/><br>
+                    <label for="Devolución">Dia de Devolución</label>
+                        <input type="date" id="Devolución" name="Devolución" value="Devolución"/>
+            </fieldset>
+           <input type="submit"><br>
+           <input type="reset"/>
+        </form>
+    <a href="../EjerciciosHTM.html">Volver a la Pagina Principal</a>
+</body>
+</html>
